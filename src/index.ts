@@ -1,3 +1,12 @@
+/**
+ * CSV Generator.
+ *
+ * Generate a csv string from an Object of Arrays of Strings.
+ *
+ * @param {Object} data The data to be transformed into csv. Example: {"title1": ['1','2'], title2: ['3','4']}
+ *
+ * @return {string} A csv string generated from the data Object. Example: 'title1,title2\n1,3\n2,4'
+ */
 export const generateCsv = (data:{[key:string]: string[]}): string => {
   let csvData = '';
   let i = 1
