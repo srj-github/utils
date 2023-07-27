@@ -46,3 +46,10 @@ value.t1.2,value.t2.2
 ```
 
 All values can contain commas, it won't break the order.
+
+### generateGuid
+
+```javascript
+import {generateGuid} from '@zrgjs/utils/lib/
+```
+Generate a 128-bit globally unique identifier.
