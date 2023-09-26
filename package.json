@@ -1,6 +1,6 @@
 {
   "name": "@zrgjs/utils",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "My Utils",
   "main": "index.js",
   "scripts": {
@@ -11,5 +11,6 @@
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.1.6"
-  }
+  },
+  "typings": "./lib/index.d.ts"
 }
