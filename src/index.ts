@@ -22,7 +22,8 @@ export const generateCsv = (data:{[key:string]: string[]}): string => {
 
   // [C] Get the longest array length from data.
   let maxLength = 0
-  for (let [_, values] of Object.entries(data)) {
+  for (let [key, values] of Object.entries(data)) {
+    if (values.length === 0) data[key] = ['']
     if (values.length > maxLength) maxLength = values.length
   }
   // [/C] 
